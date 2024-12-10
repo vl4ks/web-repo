@@ -10,80 +10,176 @@
 </head>
 
 <body>
-    <header class="site-header">
-        <div class="container header-container">
-            <div class="brand-logo">IT WEBSITE</div>
-            <nav class="navigation-menu">
-                <ul>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Media</a></li>
-                    <li><a href="#">Cases</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Contacts</a></li>
-                </ul>
+    <div class="main-wrapper">
+        <header class="main-header">
+            <img class="menu-icon-small" src="assets/img/icon_menu_s.svg" id="menu-toggle-small" alt="Menu">
+            <img class="menu-icon-medium" src="assets/img/icon_menu_m.svg" id="menu-toggle-medium" alt="Menu">
+            <div class="brand-logo">
+                IT WEBSITE
+            </div>
+            <nav class="main-navigation">
+                <a href="#">Services</a>
+                <a href="#">Media</a>
+                <a href="#">Cases</a>
+                <a href="#">FAQ</a>
+                <a href="#">Contacts</a>
             </nav>
-            <div class="header-contacts">
-                <p><img src="assets/img/phone-icon.svg" alt="Phone"> +7 (111) 111 11 11</p>
-                <p><img src="assets/img/email-icon.svg" alt="Email"> itcompany@mail.com</p>
+            <div class="contact-details">
+                <div class="contact-item">
+                    <img src="assets/img/phone-icon.svg" alt="Phone">
+                    <a href="#">+7 (111) 111 11 11</a>
+                    <a href="#">+7 (111) 111 11 11</a>
+                </div>
+                <div class="contact-item">
+                    <img src="assets/img/email-icon.svg" alt="Email">
+                    <a href="#">itcompany@mail.com</a>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="dropdown-menu" id="dropdown">
+        <div class="dropdown-content" id="dropdown-content">
+            <div class="dropdown-close">
+                <img src="assets/img/close.svg" id="menu-close" alt="Close">
+            </div>
+            <div class="brand-logo">
+                IT WEBSITE
+            </div>
+            <nav class="main-navigation">
+                <a href="#">Services</a>
+                <a href="#">Media</a>
+                <a href="#">Cases</a>
+                <a href="#">FAQ</a>
+                <a href="#">Contacts</a>
+            </nav>
+            <div class="contact-item">
+                <div>
+                    <img src="assets/img/phone-icon.svg" alt="Phone">
+                    <a href="#">+7 (111) 111 11 11</a>
+                </div>
+                <div>
+                    <img src="assets/img/phone-icon.svg" alt="Phone">
+                    <a href="#">+7 (111) 111 11 11</a>
+                </div>
+                <div>
+                    <img src="assets/img/email-icon.svg" alt="Email">
+                    <a href="#">itcompany@mail.com</a>
+                </div>
             </div>
         </div>
-    </header>
+    </div>
     <main>
-        <section class="intro">
-            <div class="container intro-container">
+        <section class="intro-section">
+            <div class="main-container">
                 <div class="intro-text">
-                    <div> Development of <span> mobile <br> applications </span> and <span> web services</span> <br> of
-                        any complexity
-                    </div>
+                    <div>Development of <span>mobile <br> applications</span> and <span>web services</span> <br> of any
+                        complexity</div>
                     <p>We create mobile applications for iOS, Android that transfer your business to mobile applications
-                        of
-                        your customers' devices </p>
+                        of your customers' devices</p>
                 </div>
                 <div class="intro-form">
-                    <form>
+                    <div class="form-wrapper">
                         <p>Leave your contacts and we will call you back <br> within 30 minutes</p>
-                        <div>
-                            <label for="phone">Phone number</label>
-                            <input type="tel" id="phone" placeholder="+7 (___) ___-__-__">
+                        <div class="form-fields">
+                            <div>
+                                <label for="phone">Phone number</label>
+                                <input id="phone" type="number" />
+                            </div>
+                            <div>
+                                <label for="name">Full name</label>
+                                <input id="name" type="text" />
+                            </div>
+                            <button type="submit">Get <br>consultation</button>
                         </div>
-                        <div>
-                            <label for="name">Full name:</label>
-                            <input type="text" id="name" placeholder="Your Name">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="tech-section">
+            <div class="main-container">
+                <div class="tech-content">
+                    <div class="tech-column">
+                        <div class="tech-details">
+                            <div>Full development cycle</div>
+                            <p>We use proven technologies</p>
                         </div>
-                        <button type="submit">Get <br>consultation</button>
-                    </form>
+                        <div class="tech-text">
+                            <div>
+                                <div>Web</div>
+                                <p>PHP / Javascript / Node.JS / Web Socket / Socket.io / Vue.js/<br>Nuxt / MySQL /
+                                    Laravel / GO lang / django / Python</p>
+                            </div>
+                            <div>
+                                <div>Mobile</div>
+                                <p>Swift / Kotlin / Alamofire / Firebase / CoreData / Room / Realm /<br> Coroutine /
+                                    RxJava / RxSwift / Unit Test / Navigation</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tech-links">
+                        <ul>
+                            <li>
+                                <a href="">iOS development</a>
+                                <a href="#" class="arrow-link">></a>
+                            </li>
+                            <li>
+                                <a href="">Android development</a>
+                                <a href="#" class="arrow-link">></a>
+                            </li>
+                            <li>
+                                <a href="">Web development</a>
+                                <a href="#" class="arrow-link">></a>
+                            </li>
+                            <li>
+                                <a href="">UI/UX design</a>
+                                <a href="#" class="arrow-link">></a>
+                            </li>
+                            <li>
+                                <a href="">Testing</a>
+                                <a href="#" class="arrow-link">></a>
+                            </li>
+                            <li>
+                                <a href="">Launch</a>
+                                <a href="#" class="arrow-link">></a>
+                            </li>
+                            <li>
+                                <a href="">IT consulting</a>
+                                <a href="#" class="arrow-link">></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="site-footer">
-        <div class="container footer-container">
-            <div class="footer-footer">
+    <footer class="main-footer">
+        <div class="main-container">
+            <div class="footer-wrapper">
                 <div class="footer-brand">IT WEBSITE</div>
-                <div class="footer-links">
-                    <div class="footer-links-items">
-                        <div class="footer-item">
-                            <img src="assets/img/phone-icon-footer.svg" alt="Phone">
+                <div class="footer-details">
+                    <div class="footer-item">
+                        <div class="item-header">
+                            <img src="assets/img/phone-icon-footer.svg" alt="">
                             <p>Contact nums</p>
                         </div>
                         <p>+7 (778) 395 90 26</p>
                     </div>
-                    <div class="footer-links-items">
-                        <div class="footer-item">
-                            <img src="assets/img/email-icon-footer.svg" alt="Email">
-                            <p>Post</p>
+                    <div class="footer-item">
+                        <div class="item-header">
+                            <img src="assets/img/email-icon-footer.svg" alt="">
+                            <p>Email</p>
                         </div>
                         <p>mail@mail.com</p>
                     </div>
-                    <div class="footer-links-items">
-                        <div class="footer-item">
-                            <img src="assets/img/location-icon.svg" alt="Address">
-                            <p>Adress</p>
+                    <div class="footer-item">
+                        <div class="item-header">
+                            <img src="assets/img/location-icon.svg" alt="">
+                            <p>Address</p>
                         </div>
-                        <p>City city, steet st. 90</p>
+                        <p>City city, street st. 90</p>
                     </div>
-                    <div class="footer-links-items">
-                        <div class="footer-item">
+                    <div class="footer-item">
+                        <div class="item-header">
                             <img src="assets/img/document.svg" alt="">
                             <p>Leave a request</p>
                         </div>
