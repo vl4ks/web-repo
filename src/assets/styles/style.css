@@ -26,14 +26,22 @@ a {
 .site-header {
     background-color: #fff;
     display: flex;
-    position: fixed;
-    width: 100%;
     justify-content: space-between;
     align-items: center;
-    border-radius: 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 24px 16px;
-    z-index: 1000;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.menu-icon-small,
+.menu-icon-medium {
+    display: block;
+    width: 24px;
+    cursor: pointer;
+}
+
+.menu-icon-medium {
+    display: none;
 }
 
 .brand-logo {
