@@ -2,10 +2,213 @@
 @import "./fonts.css";
 @import "./utils.css";
 
-.test {
-    color: yellow !important;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.test {
-    color: red !important;
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1224px;
+    margin: 10px auto;
+}
+
+/* Заголовок */
+.site-header {
+    background-color: #fff;
+    display: flex;
+    position: fixed;
+    width: 1224px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #2D66EE;
+    padding: 24px 16px;
+}
+
+.brand-logo {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2D66EE;
+}
+
+.header-nav {
+    color: #101828;
+    display: flex;
+    gap: 24px;
+}
+
+.contact-info {
+    display: flex;
+    gap: 16px;
+}
+
+.contact-info-items {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Главная секция */
+main {
+    color: #101828;
+}
+
+.intro {
+    background-color: #F2F4F7;
+    padding: 160px 0 270px 0;
+    text-align: center;
+}
+
+.intro-text {
+    width: 600px;
+    margin-bottom: 64px;
+}
+
+.intro-text div {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 52px;
+    padding-bottom: 24px;
+    text-align: left;
+}
+
+.intro-text span {
+    color: #2D66EE;
+}
+
+.intro-text p {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: left;
+    color: #101828;
+}
+
+.intro-form {
+    width: 676px;
+    background-color: #fff;
+    padding: 24px;
+    border-radius: 12px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.form p {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: left;
+}
+
+.form-elements {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 16px;
+}
+
+.form-elements div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+}
+
+.form-elements label {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: #667085;
+    text-align: left;
+}
+
+.form-elements input {
+    width: 224px;
+    border: none;
+    border-bottom: 0.7px solid #D0D5DD;
+    padding: 8px 0;
+    font-size: 17px;
+    font-weight: 400px;
+}
+
+.form-elements button {
+    padding: 11px 24px;
+    background-color: #2D66EE;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    line-height: 18px;
+    text-align: left;
+}
+
+/* Футер */
+.footer-footer {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 1224px;
+    flex-direction: column;
+    border-radius: 12px;
+    padding: 24px;
+    background-color: #101828;
+    color: #fff;
+    gap: 40px;
+}
+
+.footer-brand {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 18px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-links-items p {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 22px;
+}
+
+.footer-item p {
+    color: #98A2B3;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.footer-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 11px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
 }
