@@ -10,54 +10,63 @@
 </head>
 
 <body>
-    <header class="site-header">
-        <div class="container header-container">
+    <div class="container">
+        <header class="site-header">
             <div class="brand-logo">IT WEBSITE</div>
-            <nav class="navigation-menu">
+            <nav class="header-nav">
                 <ul>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Media</a></li>
-                    <li><a href="#">Cases</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Contacts</a></li>
+                    <a href="#">Services</a>
+                    <a href="#">Media</a>
+                    <a href="#">Cases</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Contacts</a>
                 </ul>
             </nav>
-            <div class="header-contacts">
-                <p><img src="assets/img/phone-icon.svg" alt="Phone"> +7 (111) 111 11 11</p>
-                <p><img src="assets/img/email-icon.svg" alt="Email"> itcompany@mail.com</p>
+            <div class="contact-info">
+                <div class="contact-info-items">
+                    <img src="assets/img/phone-icon.svg" alt="">
+                    <a href="#"> +7 (111) 111 11 11 </a>
+                    <a href="#"> +7 (111) 111 11 11 </a>
+                </div>
+                <div class="contact-info-items">
+                    <img src="assets/img/email-icon.svg" alt="">
+                    <a href="#"> itcompany@mail.com</a>
+                </div>
             </div>
-        </div>
-    </header>
+        </header>
+    </div>
     <main>
         <section class="intro">
-            <div class="container intro-container">
+            <div class="container">
                 <div class="intro-text">
-                    <div> Development of <span> mobile <br> applications </span> and <span> web services</span> <br> of
-                        any complexity
+                    <div>Development of <span>mobile applications </span> and <span> web services</span> of any
+                        complexity
                     </div>
                     <p>We create mobile applications for iOS, Android that transfer your business to mobile applications
-                        of
-                        your customers' devices </p>
+                        of your customers' devices </p>
                 </div>
                 <div class="intro-form">
-                    <form>
+                    <div class="form">
                         <p>Leave your contacts and we will call you back <br> within 30 minutes</p>
-                        <div>
-                            <label for="phone">Phone number</label>
-                            <input type="tel" id="phone" placeholder="+7 (___) ___-__-__">
+                        <div class="form-elements">
+                            <div>
+                                <label for="phone">Phone number</label>
+                                <input id="phone" type="tel" value="+7 (111) 111-11-11"
+                                    placeholder="+7 (123) 456-78-90"></input>
+                            </div>
+                            <div>
+                                <label for="name">Full name</label>
+                                <input id="name" type="text" value="Иван Иванов" placeholder="Имя Фамилия"></input>
+                            </div>
+                            <button type="submit">Get <br>consultation</button>
                         </div>
-                        <div>
-                            <label for="name">Full name:</label>
-                            <input type="text" id="name" placeholder="Your Name">
-                        </div>
-                        <button type="submit">Get <br>consultation</button>
-                    </form>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
     <footer class="site-footer">
-        <div class="container footer-container">
+        <div class="container">
             <div class="footer-footer">
                 <div class="footer-brand">IT WEBSITE</div>
                 <div class="footer-links">
