@@ -1,0 +1,11 @@
+{
+  "name": "web-technologies-2024",
+  "version": "1.0.0",
+  "description": "homework-web",
+  "main": "script.js",
+  "scripts": {
+    "start": "node script.js"
+  },
+  "author": "Denisova K.I.",
+  "license": "ISC"
+}
